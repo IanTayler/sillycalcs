@@ -36,7 +36,9 @@ class BinarySearchInterpreter(actual_parser.TreeInterpreter):
         minv = -sys.float_info.max
         maxv = sys.float_info.max
         currv = minv
-        base_epsilon = sys.float_info.epsilon
+        # We use sys.float_info.min because sys.float_info.epsilon is too big for
+        # small numbers, so it yields inexact results too often.
+        base_epsilon = sys.float_info.min
         epsilon = adjust_epsilon(base_epsilon, currv)
         while abs(diff_evaluator(currv)) > epsilon:
             diff = diff_evaluator(currv)
