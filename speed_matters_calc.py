@@ -7,14 +7,6 @@ import sys
 import actual_parser
 
 
-OP_FUNC = {
-    "+": lambda a, b: a + b,
-    "-": lambda a, b: a - b,
-    "*": lambda a, b: a * b,
-    "/": lambda a, b: a / b,
-}
-
-
 class BinarySearchInterpreter(actual_parser.TreeInterpreter):
     """Interpret by getting continually closer to the result."""
 
