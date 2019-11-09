@@ -10,14 +10,20 @@ Inspired by [my\_first\_calculator.py](https://github.com/AceLewis/my_first_calc
 
 This calculator runs an `eval()` of the user input, but first mangles the alphabetic characters in the input to be VERY SAFE from injection attacks.
 
+Implemented on [safety\_first\_calc.py](/safety_first_calc.py).
+
 ## Speed matters calculator
 
 This calculator searches the space of possible floating point values to find one that satisfies conditions to be called the result of the operation.
 
 It does a binary search instead of a simple incrementing search to be VERY FAST.
 
+Implemented on [speed\_matters\_calc.py](/speed_matters_calc.py).
+
 ## Intelligent calculator
 
 This calculator trains machine learning models to do the basic arithmetic operations and then uses them to calculate the result.
 
 This calculator is VERY INTELLIGENT, but it most likely won't get the right result for operations involving multiplication and division.
+
+Implemented on [intelligent\_calc.py](/intelligent_calc.py).
