@@ -6,7 +6,7 @@ All are meant to be used interactively and accept complex expressions involving 
 
 e.g. `12 * (5 + 4) * 9 / 4 - 15`
 
-Some of them work, some don't.
+Some of them give the right answer, some don't.
 
 
 ## Implemented calculators
