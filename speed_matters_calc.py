@@ -57,13 +57,13 @@ class BinarySearchInterpreter(actual_parser.TreeInterpreter):
 
     def prod_value(self, lv, rv):
         def prod_diff(possible_result):
-            return (possible_result / (lv * rv)) - 1
+            return possible_result - (lv * rv)
 
         return self._binary_search(prod_diff)
 
     def div_value(self, lv, rv):
         def div_diff(possible_result):
-            return (rv * possible_result) - lv
+            return possible_result - lv / rv
 
         return self._binary_search(div_diff)
 
